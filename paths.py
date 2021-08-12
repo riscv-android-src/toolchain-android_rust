@@ -19,8 +19,7 @@ import build_platform
 THIS_DIR = os.path.realpath(os.path.dirname(__file__))
 
 STAGE0_RUST_VERSION = '1.51.0'
-CLANG_REVISION = 'r416183b'
-
+CLANG_REVISION = 'r416183b1'
 
 def workspace_path(*args):
     """Generates a path relative to the root of the workspace."""
@@ -120,6 +119,8 @@ def extract_arch(target):
         return 'arm'
     if canon_arch == 'i686':
         return 'x86'
+    if canon_arch == 'riscv64':
+        return 'riscv64'
     return canon_arch
 
 

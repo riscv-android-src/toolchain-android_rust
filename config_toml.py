@@ -22,7 +22,7 @@ import paths
 
 host_targets = [build_platform.triple()] + build_platform.alt_triples()
 device_targets = ['aarch64-linux-android', 'armv7-linux-androideabi',
-                  'x86_64-linux-android', 'i686-linux-android']
+                  'x86_64-linux-android', 'i686-linux-android', 'riscv64-linux-android']
 all_targets = host_targets + device_targets
 
 
