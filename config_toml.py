@@ -124,7 +124,7 @@ ar="{ar}"
         config_toml.write("""\
 [llvm]
 ninja = true
-targets = "AArch64;ARM;X86"
+targets = "AArch64;ARM;X86;RISCV"
 experimental-targets = ""
 use-libcxx = true
 [build]
